@@ -2,9 +2,9 @@ name: Python application test with Github Actions
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions7checkouts@v2
+    - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
